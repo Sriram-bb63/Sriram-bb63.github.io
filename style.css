@@ -96,12 +96,16 @@ nav li a:hover {
 }
 
 .sec-1 article {
-    /* background-color: rgb(0, 0, 0, 0.1); */
-    /* backdrop-filter: blur(5px); */
     width: 50%;
     position: relative;
     top: 20%;
     left: 25%;
+}
+.sec-1 article:hover {
+    backdrop-filter: blur(2px);
+    -webkit-box-shadow: 0 0 30px 5px var(--red); 
+    -moz-box-shadow: 0 0 30px 5px var(--red); 
+    box-shadow: 0 0 30px 5px var(--red);
 }
 @media screen and (max-width: 800px) {
     .sec-1 article {
@@ -128,7 +132,6 @@ nav li a:hover {
 .sec-2 {
     background-image: url(static/cover.jpg);
     background-position: right;
-    /* background-size: 100vw; */
     width: 100%;
     height: 100vh;
 }
@@ -140,8 +143,8 @@ nav li a:hover {
 
 .sec-2 article{
     background-color: rgb(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    height: 60%;
+    backdrop-filter: blur(10px);
+    /* height: 60%; */
     width: 20%;
     position: relative;
     top: 50%;
@@ -149,8 +152,12 @@ nav li a:hover {
     transform: translate(-50%, -50%)
 }
 .sec-2 article:hover {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid var(--red);
+    background-color: rgb(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 800px) {
+    .sec-2 article{
+        width: 75%;
+    }
 }
 
 .sec-2 article ul {
@@ -164,6 +171,11 @@ nav li a:hover {
     text-align: right;
     padding: 5% 10%;
 }
+@media screen and (max-width: 800px) {
+    .sec-2 article h2{
+        font-size: 10vw;
+    }
+}
 
 .sec-2 article ul li {
     color: var(--red);
@@ -171,4 +183,10 @@ nav li a:hover {
     font-size: 2vw;
     padding: 0% 10%;
     line-height: 150%;
+}
+@media screen and (max-width: 800px) {
+    .sec-2 article ul li{
+        font-size: 5vw;
+        font-weight: bold;
+    }
 }
