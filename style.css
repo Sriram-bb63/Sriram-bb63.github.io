@@ -18,6 +18,10 @@
 	cursor: default;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--black);
 }
@@ -86,7 +90,7 @@ nav li a:hover {
     background-size: 100vw;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
 }
 @media screen and (max-width: 800px) {
     .sec-1 {
@@ -156,7 +160,7 @@ nav li a:hover {
 }
 @media screen and (max-width: 800px) {
     .sec-2 article{
-        width: 75%;
+        width: 60%;
     }
 }
 
@@ -186,7 +190,7 @@ nav li a:hover {
 }
 @media screen and (max-width: 800px) {
     .sec-2 article ul li{
-        font-size: 5vw;
-        font-weight: bold;
+        font-size: 4.5vw;
+        /* font-weight: bold; */
     }
 }
