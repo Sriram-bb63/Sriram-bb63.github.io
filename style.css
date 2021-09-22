@@ -36,7 +36,7 @@ header {
 header h1 {
     color: var(--black);
     font-size: 3.5vw;
-    padding: 2.8vh 1vw;
+    padding: 2.8vh 1vw 2.8vh 1vw;
     font-family: 'Great Vibes'
 }
 @media screen and (max-width: 800px) {
@@ -113,14 +113,14 @@ nav li a:hover {
 
 .sec-1 article p {
     color: var(--white);
-    font-size: 2vw;
+    font-size: 150%;
     font-family: 'Montserrat';
     line-height: 150%;
     padding: 5%;
 }
 @media screen and (max-width: 800px) {
     .sec-1 article p {
-        font-size: 4vw;
+        font-size: 100%;
         padding: 2%;
     }
 }
