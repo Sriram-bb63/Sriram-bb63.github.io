@@ -91,6 +91,7 @@ nav li a:hover {
 @media screen and (max-width: 800px) {
     .sec-1 {
         height: 40vh;
+        background-size: 100vw 40vh;
     }
 }
 
