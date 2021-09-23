@@ -43,7 +43,7 @@ header h1 {
     padding: 2.8vh 1vw 2.8vh 1vw;
     font-family: 'Great Vibes'
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     header h1 {
         font-size: 10vw;
         padding: 1vh 1.5vw 1vh 1.5vw;
@@ -54,7 +54,7 @@ nav {
     background-color: var(--black);
     overflow: hidden;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     nav {
         display: none;
     }
@@ -92,7 +92,7 @@ nav li a:hover {
     width: 100vw;
     height: 100vh;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .sec-1 {
         height: 25vh;
         background-size: 100vw 40vh;
@@ -102,8 +102,11 @@ nav li a:hover {
 .sec-1 article {
     width: 50%;
     position: relative;
-    top: 20%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
 }
 .sec-1 article:hover {
     backdrop-filter: blur(2px);
@@ -111,11 +114,12 @@ nav li a:hover {
     -moz-box-shadow: 0 0 30px 5px var(--red); 
     box-shadow: 0 0 30px 5px var(--red);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .sec-1 article {
         width: 80%;
         top: 20%;
         left: 10%;
+        transform: translate(0%, 0%);
     }
 }
 
@@ -126,7 +130,7 @@ nav li a:hover {
     line-height: 150%;
     padding: 5%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .sec-1 article p {
         font-size: 3.5vw;
         padding: 2%;
@@ -139,7 +143,7 @@ nav li a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .fixed-bg{
         background-position: bottom;
     }
@@ -151,7 +155,7 @@ nav li a:hover {
     width: 100%;
     height: 100vh;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .sec-2 {
         height: 40vh;
     }
@@ -165,12 +169,14 @@ nav li a:hover {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
 }
 .sec-2 article:hover {
     background-color: rgb(0, 0, 0, 0.7);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .sec-2 article{
         width: 60%;
     }
@@ -187,7 +193,7 @@ nav li a:hover {
     text-align: right;
     padding: 5% 10%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .sec-2 article h2{
         font-size: 7vw;
     }
@@ -200,7 +206,10 @@ nav li a:hover {
     padding: 0% 10%;
     line-height: 150%;
 }
-@media screen and (max-width: 800px) {
+.sec-2 article ul li:last-child {
+    padding-bottom: 10%;
+}
+@media screen and (max-width: 780px) {
     .sec-2 article ul li{
         font-size: 4.5vw;
         /* font-weight: bold; */
@@ -212,4 +221,73 @@ nav li a:hover {
     background-position: right; */
     width: 100%;
     height: 100vh;
+}
+@media screen and (max-width: 780px) {
+    .sec-3{
+        height: 40vh;
+    }
+}
+
+.sec-3 article {
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    /* height: 60%; */
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+}
+.sec-3 article:hover {
+    background-color: rgb(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 780px) {
+    .sec-3 article{
+        width: 80%;
+    }
+}
+
+.sec-3 article ul {
+    list-style-type: none;
+}
+
+
+.sec-3 article h2 {
+    color: var(--red);
+    font-family: 'Ubuntu';
+    font-size: 3vw;
+    text-align: right;
+    padding: 5% 10%;
+}
+@media screen and (max-width: 780px) {
+    .sec-3 article h2{
+        font-size: 7vw;
+    }
+}
+
+.sec-3 article ul li h3, p{
+    color: var(--red);
+    font-family: 'Montserrat';
+    font-size: 2vw;
+    padding: 0% 10%;
+    /* line-height: 150%; */
+}
+.sec-3 article ul li:last-child {
+    padding-bottom: 5%;
+}
+@media screen and (max-width: 780px) {
+    .sec-3 article ul li h3, p{
+        font-size: 4.5vw;
+    }
+}
+
+.sec-3 article ul li p {
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 780px) {
+    .sec-3 article ul li p{
+        font-size: 3vw;
+    }
 }
