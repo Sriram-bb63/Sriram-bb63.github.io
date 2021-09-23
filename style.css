@@ -18,6 +18,13 @@
 	cursor: default;
 }
 
+/* @media (hover: hover) { 
+    *:hover {
+        background: red;
+        color: white;
+    }
+} */
+
 html {
     scroll-behavior: smooth;
 }
@@ -109,6 +116,7 @@ nav li a:hover {
     -webkit-transition: all .2s ease;
 }
 .sec-1 article:hover {
+    /* transform: translate(%, 0%); */
     backdrop-filter: blur(2px);
     -webkit-box-shadow: 0 0 30px 5px var(--red); 
     -moz-box-shadow: 0 0 30px 5px var(--red); 
@@ -116,10 +124,10 @@ nav li a:hover {
 }
 @media screen and (max-width: 780px) {
     .sec-1 article {
+        transform: translate(0%, 0%);
         width: 80%;
         top: 20%;
         left: 10%;
-        transform: translate(0%, 0%);
     }
 }
 
