@@ -126,7 +126,7 @@ nav li a:hover {
     .sec-1 article {
         transform: translate(0%, 0%);
         width: 80%;
-        top: 20%;
+        top: 15%;
         left: 10%;
     }
 }
@@ -140,7 +140,8 @@ nav li a:hover {
 }
 @media screen and (max-width: 780px) {
     .sec-1 article p {
-        font-size: 3.5vw;
+        /* font-size: 3.5vw; */
+        font-size: 3vw;
         padding: 2%;
     }
 }
@@ -187,6 +188,8 @@ nav li a:hover {
 @media screen and (max-width: 780px) {
     .sec-2 article{
         width: 80%;
+        height: 80%;
+        overflow-y: scroll;
     }
 }
 
