@@ -315,14 +315,22 @@ nav li a:hover {
 .sec-4 article {
     background-color: rgb(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-    /* height: 60%; */
+    height: 90%;
     width: 50%;
+    overflow-y: scroll;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all .2s ease;
     -webkit-transition: all .2s ease;
+}
+.sec-4 article::-webkit-scrollbar {
+    display: none;
+}
+.sec-4 article {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 .sec-4 article:hover {
     background-color: rgb(0, 0, 0, 0.7);
@@ -343,6 +351,21 @@ nav li a:hover {
     .sec-4 article h2{
         font-size: 7vw;
     }
+}
+
+.sec-4 article ul li h3 a {
+    color: var(--red);
+}
+
+.sec-4-list-2 li {
+    font-size: 2vw;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 1% 10%;
+}
+
+.sec-4-list-2 li a {
+    color: var(--red);
 }
 
 .sec-4 article ul li h3, p{
