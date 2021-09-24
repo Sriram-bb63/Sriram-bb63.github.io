@@ -186,7 +186,7 @@ nav li a:hover {
 }
 @media screen and (max-width: 780px) {
     .sec-2 article{
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -335,6 +335,11 @@ nav li a:hover {
 .sec-4 article:hover {
     background-color: rgb(0, 0, 0, 0.7);
 }
+@media screen and (max-width: 780px) {
+    .sec-4 article{
+        width: 80%;
+    }
+}
 
 .sec-4 article ul {
     list-style-type: none;
@@ -362,6 +367,11 @@ nav li a:hover {
     font-family: 'Montserrat';
     font-weight: bold;
     padding: 1% 10%;
+}
+@media screen and (max-width: 780px) {
+    .sec-4-list-2 li {
+        font-size: 4.5vw;
+    }
 }
 
 .sec-4-list-2 li a {
