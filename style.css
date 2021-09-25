@@ -365,22 +365,6 @@ nav li a:hover {
     color: var(--red);
 }
 
-.sec-4-list-2 li {
-    font-size: 2vw;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    padding: 1% 10%;
-}
-@media screen and (max-width: 780px) {
-    .sec-4-list-2 li {
-        font-size: 4.5vw;
-    }
-}
-
-.sec-4-list-2 li a {
-    color: var(--red);
-}
-
 .sec-4 article ul li h3, p{
     color: var(--red);
     font-family: 'Montserrat';
@@ -403,5 +387,16 @@ nav li a:hover {
 @media screen and (max-width: 780px) {
     .sec-4 article ul li p{
         font-size: 3vw;
+    }
+}
+
+.sec-4 article ul li p a {
+    font-size: 1.5vw;
+    color: var(--red);
+}
+@media screen and (max-width: 780px) {
+    .sec-4 article ul li p{
+        font-size: 3vw;
+        color: var(--red);
     }
 }
