@@ -18,6 +18,10 @@
 	cursor: default;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 /* section {
     border: 1px solid lime;
 } */
@@ -418,7 +422,7 @@ nav li a:hover {
     background-color: rgb(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     display: inline-block;
-    margin: 2% 2%;
+    margin: 2% 10%;
 }
 @media screen and (max-width: 780px) {
     .sec-5 h2{
@@ -447,6 +451,10 @@ nav li a:hover {
         width: 50%;
         height: 70%;
     }
+}
+
+.sec-5 div a {
+    text-decoration: none;
 }
 
 .fa {
