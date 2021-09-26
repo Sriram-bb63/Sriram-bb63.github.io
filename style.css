@@ -211,6 +211,7 @@ nav li a:hover {
     color: var(--red);
     font-family: 'Montserrat';
     font-size: 2vw;
+    font-weight: bold;
     padding: 0% 10%;
     line-height: 150%;
 }
@@ -406,7 +407,7 @@ nav li a:hover {
 }
 @media screen and (max-width: 780px) {
     .sec-5{
-        height: 40vh;
+        height: 30vh;
     }
 }
 
@@ -440,8 +441,11 @@ nav li a:hover {
 }
 @media screen and (max-width: 780px) {
     .sec-5 div{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);    
         width: 50%;
-        height: 60%;
+        height: 70%;
     }
 }
 
@@ -483,4 +487,19 @@ nav li a:hover {
 .fa-twitter:hover {
     color: rgb(0, 0, 0);
     background-color: #00ACEE;
+}
+
+footer {
+    background-image: url(static/cover.jpg);
+    /* background-size: 100vw; */
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
+}
+@media screen and (max-width: 780px) {
+    footer {
+        height: 10vh;
+        background-size: 100vw 40vh;
+    }
 }
