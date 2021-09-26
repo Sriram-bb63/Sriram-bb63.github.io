@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 :root {
-	--black: #171717; /*bg*/
-	--grey: #363636;  /*div*/
+	--black: #171717;
+	--grey: #363636;
     --red: rgb(202, 3, 3);
-	--white: #EDEDED; /*text*/
+	--white: #EDEDED;
 }
 
 * {
@@ -22,10 +21,6 @@
 a:hover {
     cursor: pointer;
 }
-
-/* section {
-    border: 1px solid lime;
-} */
 
 html {
     scroll-behavior: smooth;
@@ -43,12 +38,12 @@ body.example {
 }
 
 header {
-    background-color: var(--black);
+    background-color: var(--red);
     border-bottom: 1px solid var(--red);
 }
 
 header h1 {
-    color: var(--red);
+    color: var(--black);
     font-size: 3.5vw;
     padding: 2.8vh 1vw 2.8vh 1vw;
     font-family: 'Great Vibes'
@@ -142,7 +137,6 @@ nav li a:hover {
 }
 @media screen and (max-width: 780px) {
     .sec-1 article p {
-        /* font-size: 3.5vw; */
         font-size: 3vw;
         padding: 2%;
     }
@@ -161,8 +155,6 @@ nav li a:hover {
 }
 
 .sec-2 {
-    /* background-image: url(static/cover.jpg);
-    background-position: right; */
     width: 100%;
     height: 100vh;
 }
@@ -175,7 +167,6 @@ nav li a:hover {
 .sec-2 article{
     background-color: rgb(0, 0, 0, 0.7);
     backdrop-filter: blur(25px);
-    /* height: 60%; */
     width: 40%;
     position: relative;
     top: 50%;
@@ -194,7 +185,6 @@ nav li a:hover {
     .sec-2 article{
         width: 80%;
         height: 80%;
-        /* overflow-y: scroll; */
     }
 }
 
@@ -229,13 +219,10 @@ nav li a:hover {
 @media screen and (max-width: 780px) {
     .sec-2 article ul li{
         font-size: 4.5vw;
-        /* font-weight: bold; */
     }
 }
 
 .sec-3 {
-    /* background-image: url(static/cover.jpg);
-    background-position: right; */
     width: 100%;
     height: 100vh;
 }
@@ -248,7 +235,6 @@ nav li a:hover {
 .sec-3 article {
     background-color: rgb(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
-    /* height: 60%; */
     width: 50%;
     position: relative;
     top: 50%;
@@ -292,7 +278,6 @@ nav li a:hover {
     font-family: 'Montserrat';
     font-size: 2vw;
     padding: 0% 10%;
-    /* line-height: 150%; */
 }
 .sec-3 article ul li:last-child {
     padding-bottom: 5%;
@@ -313,8 +298,6 @@ nav li a:hover {
 }
 
 .sec-4 {
-    /* background-image: url(static/cover.jpg);
-    background-position: right; */
     width: 100%;
     height: 100vh;
 }
@@ -382,7 +365,6 @@ nav li a:hover {
     font-family: 'Montserrat';
     font-size: 2vw;
     padding: 0% 10%;
-    /* line-height: 150%; */
 }
 .sec-4 article ul li:last-child {
     padding-bottom: 5%;
@@ -414,8 +396,6 @@ nav li a:hover {
 }
 
 .sec-5 {
-    /* background-image: url(static/cover.jpg);
-    background-position: right; */
     width: 100vw;
     height: 70vh;
 }
@@ -449,7 +429,6 @@ nav li a:hover {
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 50% 50%;
-    /* grid-gap: 10px; */
     background-color: rgb(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
 }
@@ -509,7 +488,6 @@ nav li a:hover {
 
 footer {
     background-image: url(static/cover.jpg);
-    /* background-size: 100vw; */
     background-position: right;
     background-repeat: no-repeat;
     width: 100vw;
