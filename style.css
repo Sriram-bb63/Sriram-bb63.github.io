@@ -18,9 +18,9 @@
 	cursor: default;
 }
 
-section {
+/* section {
     border: 1px solid lime;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -402,7 +402,7 @@ nav li a:hover {
     /* background-image: url(static/cover.jpg);
     background-position: right; */
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
 }
 @media screen and (max-width: 780px) {
     .sec-5{
@@ -410,22 +410,68 @@ nav li a:hover {
     }
 }
 
-.sec-5 div {
-    width: 80%;
-    height: 80%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.sec-5 h2 {
+    color: var(--red);
+    font-size: 3vw;
+    font-family: 'Ubuntu';
     background-color: rgb(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-    background-color: lightblue;
+    display: inline-block;
+    margin: 2% 2%;
 }
 
-.sec-5 div h2 {
-    color: var(--red);
-    font-family: 'Ubuntu';
-    font-size: 3vw;
-    text-align: left;
-    padding: 2% 3%;
+.sec-5 div {
+    width: 30%;
+    height: 60%;
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-gap: 10px; */
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+
+}
+
+.fa {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fa-envelope {
+    color: #b31b1b;
+}
+.fa-envelope:hover {
+    color: rgb(0, 0, 0);
+    background-color: #b31b1b;
+}
+
+.fa-discord {
+    color: #5865F2;
+}
+.fa-discord:hover {
+    color: rgb(0, 0, 0);
+    background-color: #5865F2;
+}
+
+.fa-github {
+    color: #fafafa;
+}
+.fa-github:hover {
+    color: rgb(0, 0, 0);
+    background-color: #fafafa;
+}
+
+.fa-twitter {
+    color: #00ACEE;
+}
+.fa-twitter:hover {
+    color: rgb(0, 0, 0);
+    background-color: #00ACEE;
 }
