@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 :root {
@@ -42,11 +43,12 @@ body.example {
 }
 
 header {
-    background-color: var(--red);
+    background-color: var(--black);
+    border-bottom: 1px solid var(--red);
 }
 
 header h1 {
-    color: var(--black);
+    color: var(--red);
     font-size: 3.5vw;
     padding: 2.8vh 1vw 2.8vh 1vw;
     font-family: 'Great Vibes'
@@ -83,7 +85,7 @@ nav li {
 nav li a {
     display: block;
     color: var(--red);
-    font-family: 'Ubuntu';
+    font-family: 'Lato';
     text-align: center;
     padding: 1.5vh 2vw;
     text-decoration: none;
@@ -117,11 +119,10 @@ nav li a:hover {
     -webkit-transition: all .2s ease;
 }
 .sec-1 article:hover {
-    /* transform: translate(%, 0%); */
-    backdrop-filter: blur(2px);
-    -webkit-box-shadow: 0 0 30px 5px var(--red); 
-    -moz-box-shadow: 0 0 30px 5px var(--red); 
-    box-shadow: 0 0 30px 5px var(--red);
+    backdrop-filter: blur(3px);
+    -webkit-box-shadow: 0 0 50px 5px var(--red); 
+    -moz-box-shadow: 0 0 50px 5px var(--red); 
+    box-shadow: 0 0 50px 5px var(--red);
 }
 @media screen and (max-width: 780px) {
     .sec-1 article {
@@ -172,8 +173,8 @@ nav li a:hover {
 }
 
 .sec-2 article{
-    background-color: rgb(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    background-color: rgb(0, 0, 0, 0.7);
+    backdrop-filter: blur(25px);
     /* height: 60%; */
     width: 40%;
     position: relative;
@@ -184,7 +185,10 @@ nav li a:hover {
     -webkit-transition: all .2s ease;
 }
 .sec-2 article:hover {
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 20px 5px var(--red); 
+    -moz-box-shadow: 0 0 20px 5px var(--red); 
+    box-shadow: 0 0 20px 5px var(--red);    
 }
 @media screen and (max-width: 780px) {
     .sec-2 article{
@@ -200,7 +204,7 @@ nav li a:hover {
 
 .sec-2 article h2 {
     color: var(--red);
-    font-family: 'Ubuntu';
+    font-family: 'Lato';
     font-size: 3vw;
     text-align: right;
     padding: 5% 10%;
@@ -242,7 +246,7 @@ nav li a:hover {
 }
 
 .sec-3 article {
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
     /* height: 60%; */
     width: 50%;
@@ -254,7 +258,10 @@ nav li a:hover {
     -webkit-transition: all .2s ease;
 }
 .sec-3 article:hover {
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 30px 5px var(--red); 
+    -moz-box-shadow: 0 0 30px 5px var(--red); 
+    box-shadow: 0 0 30px 5px var(--red);    
 }
 @media screen and (max-width: 780px) {
     .sec-3 article{
@@ -269,7 +276,7 @@ nav li a:hover {
 
 .sec-3 article h2 {
     color: var(--red);
-    font-family: 'Ubuntu';
+    font-family: 'Lato';
     font-size: 3vw;
     text-align: right;
     padding: 5% 10%;
@@ -318,7 +325,7 @@ nav li a:hover {
 }
 
 .sec-4 article {
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
     height: 90%;
     width: 50%;
@@ -338,7 +345,10 @@ nav li a:hover {
     scrollbar-width: none;  /* Firefox */
 }
 .sec-4 article:hover {
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 30px 5px var(--red); 
+    -moz-box-shadow: 0 0 30px 5px var(--red); 
+    box-shadow: 0 0 30px 5px var(--red);    
 }
 @media screen and (max-width: 780px) {
     .sec-4 article{
@@ -352,7 +362,7 @@ nav li a:hover {
 
 .sec-4 article h2 {
     color: var(--red);
-    font-family: 'Ubuntu';
+    font-family: 'Lato';
     font-size: 3vw;
     text-align: right;
     padding: 5% 10%;
@@ -418,8 +428,8 @@ nav li a:hover {
 .sec-5 h2 {
     color: var(--red);
     font-size: 3vw;
-    font-family: 'Ubuntu';
-    background-color: rgb(0, 0, 0, 0.5);
+    font-family: 'Lato';
+    background-color: rgb(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
     display: inline-block;
     margin: 2% 10%;
@@ -440,7 +450,7 @@ nav li a:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     /* grid-gap: 10px; */
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
 }
 @media screen and (max-width: 780px) {
