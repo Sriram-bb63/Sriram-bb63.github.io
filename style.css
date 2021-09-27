@@ -76,6 +76,9 @@ nav ul {
 nav li {
     float: left;
 }
+nav li:last-child {
+    float: right;
+}
 
 nav li a {
     display: block;
