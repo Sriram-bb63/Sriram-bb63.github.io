@@ -481,12 +481,12 @@ nav li a:hover {
     background-color: #fafafa;
 }
 
-.fa-twitter {
-    color: #00ACEE;
+.fa-linkedin {
+    color: #2867B2;
 }
-.fa-twitter:hover {
+.fa-linkedin:hover {
     color: rgb(0, 0, 0);
-    background-color: #00ACEE;
+    background-color: #2867B2;
 }
 
 footer {
