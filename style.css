@@ -140,7 +140,7 @@ nav li a:hover {
 }
 @media screen and (max-width: 780px) {
     .sec-1 article p {
-        font-size: 3vw;
+        font-size: 3.2vw;
         padding: 2%;
     }
 }
