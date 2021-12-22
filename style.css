@@ -146,6 +146,10 @@ nav li a:hover {
         padding: 2%;
     }
 }
+.sec-1 article p sup {
+    color: var(--white);
+    font-family: 'Montserrat';
+}
 
 .fixed-bg {
     background-image: url("/static/cover.jpg");
