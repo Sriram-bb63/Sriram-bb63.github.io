@@ -77,12 +77,37 @@ section {
         }
         @media screen and (max-width: $phone) {
             font-size: 15vw;
-            padding-left: 3%;
+            padding-left: 5%;
         }
     }
 }
 
 .second-section {
+    @extend %flex-center;
+    .out {
+        @extend %flex-center;
+        width: 80%;
+        @media screen and (max-width: $phone) {
+            width: 90%;
+        }
+        .in {
+            width: 60%;
+            @media screen and (max-width: $phone) {
+                width: 100%;
+            }
+            p {
+                font-family: 'Raleway', sans-serif;
+                font-size: 1.5vw;
+                line-height: 30px;
+                @media screen and (max-width: $phone) {
+                    font-size: 5vw;
+                }
+            }
+        }
+    }
+}
+
+.third-section {
     @extend %flex-center;
     .skills {
         @extend %flex-center;
