@@ -3,10 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 
 // colors
-$bg: #0b0b9d;
-$black: #000000;
-$white: #ffffff;
-$accent: #E8630A;
+$bg: #001b5a;
+$text: #fff0e1;
+$accent: #ec6e00;
 
 // sizes
 $phone: 768px;
@@ -27,12 +26,14 @@ $phone: 768px;
 // mixins
 @mixin scroll-icon($rotation: 0deg) {
     width: 5vw;
+    padding-bottom: 5vh;
     transform: rotate($rotation);
+    transition: transform .2s;
+    filter: invert(64%) sepia(97%) saturate(4700%) hue-rotate(8deg) brightness(92%) contrast(104%);
     &:hover {
-        // filter: invert(17%) sepia(81%) saturate(4125%) hue-rotate(357deg) brightness(100%) contrast(132%);
-        // filter: invert(61%) sepia(34%) saturate(1375%) hue-rotate(360deg) brightness(104%) contrast(105%);
-        filter: invert(40%) sepia(99%) saturate(2263%) hue-rotate(4deg) brightness(98%) contrast(92%);
-        }
+        filter: invert(81%) sepia(28%) saturate(5009%) hue-rotate(336deg) brightness(102%) contrast(99%);
+        transform: rotate($rotation) scale(1.2);
+    }
     @extend %hide-scroll-icon-mobile;
 }
 
@@ -72,14 +73,14 @@ section {
     flex-direction: column;
     h1 {
         color: $accent;
-        padding-bottom: 40vh;
+        padding-bottom: 35vh;
         font-size: 5vw;
         font-family: 'Raleway', sans-serif;
         // text-decoration: underline;
         // text-decoration-thickness: 1px;
         // text-underline-offset: 5px;
         span {
-            color: $white;
+            color: $text;
             font-weight: 100;
         }
         @media screen and (max-width: $phone) {
@@ -104,7 +105,7 @@ section {
                 width: 100%;
             }
             p {
-                color: $white;
+                color: $text;
                 font-family: 'Raleway', sans-serif;
                 font-size: 1.5vw;
                 line-height: 30px;
@@ -137,7 +138,7 @@ section {
             justify-content: space-around;
             flex-direction: column;
             p {
-                color: $white;
+                color: $text;
                 width: 100%;
                 text-align: right;
                 font-size: 2vw;
@@ -163,7 +164,7 @@ section {
             @extend %flex-center;
             justify-content: flex-start;
             h1 {
-                color: $white;
+                color: $text;
                 font-size: 5vw;
                 font-family: 'Raleway', sans-serif;
                 @media screen and (max-width: $phone) {
