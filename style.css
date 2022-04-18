@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
-.third-section .skills .skill-part-3, .third-section .skills .skill-part-2, .third-section .skills, .third-section, .second-section .out, .second-section, .first-section {
+.fourth-section .contact .contact-part-2, .fourth-section .contact .contact-part-1, .fourth-section .contact, .fourth-section, .third-section .skills .skill-part-3, .third-section .skills .skill-part-2, .third-section .skills, .third-section, .second-section .out, .second-section, .first-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-  .scroll-icon-up, .scroll-icon-down {
+  .scroll-icon {
     display: none;
   }
 }
@@ -37,28 +37,14 @@ section {
   width: 100vw;
 }
 
-.scroll-icon-down {
+.scroll-icon {
   width: 5vw;
   padding-bottom: 5vh;
-  transform: rotate(0deg);
   transition: transform 0.2s;
   filter: invert(64%) sepia(97%) saturate(4700%) hue-rotate(8deg) brightness(92%) contrast(104%);
 }
-.scroll-icon-down:hover {
-  filter: invert(81%) sepia(28%) saturate(5009%) hue-rotate(336deg) brightness(102%) contrast(99%);
-  transform: rotate(0deg) scale(1.2);
-}
-
-.scroll-icon-up {
-  width: 5vw;
-  padding-bottom: 5vh;
-  transform: rotate(180deg);
-  transition: transform 0.2s;
-  filter: invert(64%) sepia(97%) saturate(4700%) hue-rotate(8deg) brightness(92%) contrast(104%);
-}
-.scroll-icon-up:hover {
-  filter: invert(81%) sepia(28%) saturate(5009%) hue-rotate(336deg) brightness(102%) contrast(99%);
-  transform: rotate(180deg) scale(1.2);
+.scroll-icon:hover {
+  transform: scale(1.2);
 }
 
 .first-section {
@@ -173,6 +159,69 @@ section {
 @media screen and (max-width: 768px) {
   .third-section {
     height: 60vh;
+  }
+}
+
+.fourth-section .contact {
+  width: 80%;
+  height: 80%;
+}
+@media screen and (max-width: 768px) {
+  .fourth-section .contact {
+    height: 90%;
+  }
+}
+.fourth-section .contact div {
+  width: 33%;
+  height: 100%;
+}
+.fourth-section .contact .contact-part-1 {
+  justify-content: flex-start;
+}
+.fourth-section .contact .contact-part-1 h1 {
+  color: #fff0e1;
+  font-size: 5vw;
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .fourth-section .contact .contact-part-1 h1 {
+    font-size: 8vw;
+  }
+}
+.fourth-section .contact .contact-part-2 p {
+  color: #ec6e00;
+  max-height: 100%;
+  font-size: 25vw;
+  font-family: "Titillium Web", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .fourth-section .contact .contact-part-2 p {
+    font-size: 45vw;
+  }
+}
+.fourth-section .contact .contact-part-3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.fourth-section .contact .contact-part-3 a {
+  width: 50%;
+  height: 10%;
+}
+@media screen and (max-width: 768px) {
+  .fourth-section .contact .contact-part-3 a {
+    width: 70%;
+    height: 7%;
+  }
+}
+.fourth-section .contact .contact-part-3 a img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .fourth-section {
+    height: 40vh;
   }
 }
 

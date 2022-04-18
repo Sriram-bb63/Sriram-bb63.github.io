@@ -25,16 +25,7 @@ $phone: 768px;
 
 // mixins
 @mixin scroll-icon($rotation: 0deg) {
-    width: 5vw;
-    padding-bottom: 5vh;
-    transform: rotate($rotation);
-    transition: transform .2s;
-    filter: invert(64%) sepia(97%) saturate(4700%) hue-rotate(8deg) brightness(92%) contrast(104%);
-    &:hover {
-        filter: invert(81%) sepia(28%) saturate(5009%) hue-rotate(336deg) brightness(102%) contrast(99%);
-        transform: rotate($rotation) scale(1.2);
-    }
-    @extend %hide-scroll-icon-mobile;
+    
 }
 
 * {
@@ -60,11 +51,15 @@ section {
     width: 100vw
 }
 
-.scroll-icon-down {
-    @include scroll-icon($rotation: 0deg);
-}
-.scroll-icon-up {
-    @include scroll-icon($rotation: 180deg);
+.scroll-icon {
+    width: 5vw;
+    padding-bottom: 5vh;
+    transition: transform .2s;
+    filter: invert(64%) sepia(97%) saturate(4700%) hue-rotate(8deg) brightness(92%) contrast(104%);
+    &:hover {
+        transform: scale(1.2);
+    }
+    @extend %hide-scroll-icon-mobile;
 }
 
 .first-section {
@@ -175,5 +170,66 @@ section {
     }
     @media screen and (max-width: $phone) {
         height: 60vh;
+    }
+}
+
+.fourth-section {
+    @extend %flex-center;
+    .contact {
+        @extend %flex-center;
+        width: 80%;
+        height: 80%;
+        @media screen and (max-width: $phone) {
+            height: 90%;
+        }
+        div {
+            width: 33%;
+            height: 100%;
+        }
+        .contact-part-1 {
+            @extend %flex-center;
+            justify-content: flex-start;
+            h1 {
+                color: $text;
+                font-size: 5vw;
+                font-family: 'Raleway', sans-serif;
+                text-align: right   ;
+                @media screen and (max-width: $phone) {
+                    font-size: 8vw;
+                }
+            }
+        }
+        .contact-part-2 {
+            @extend %flex-center;
+            p {
+                color: $accent;
+                max-height: 100%;
+                font-size: 25vw;
+                font-family: 'Titillium Web', sans-serif;
+                @media screen and (max-width: $phone) {
+                    font-size: 45vw;
+                }
+            }
+        }
+        .contact-part-3 {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            a {
+                width: 50%;
+                height: 10%;
+                @media screen and (max-width: $phone) {
+                    width: 70%;
+                    height: 7%;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $phone) {
+        height: 40vh;
     }
 }
