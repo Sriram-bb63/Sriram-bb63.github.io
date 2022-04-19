@@ -17,15 +17,14 @@ $phone: 768px;
     align-items: center;
 }
 
-%hide-scroll-icon-mobile {
+%text-content {
+    color: $text;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vw;
+    line-height: 30px;
     @media screen and (max-width: $phone) {
-        display: none;
+        font-size: 5vw;
     }
-}
-
-// mixins
-@mixin scroll-icon($rotation: 0deg) {
-    
 }
 
 * {
@@ -59,7 +58,9 @@ section {
     &:hover {
         transform: scale(1.2);
     }
-    @extend %hide-scroll-icon-mobile;
+    @media screen and (max-width: $phone) {
+        display: none;
+    }
 }
 
 .first-section {
@@ -89,8 +90,10 @@ section {
 .second-section {
     @extend %flex-center;
     .out {
+        // border: 1px solid red;
         @extend %flex-center;
         width: 80%;
+        height: 80%;
         @media screen and (max-width: $phone) {
             width: 90%;
         }
@@ -100,21 +103,73 @@ section {
                 width: 100%;
             }
             p {
-                color: $text;
-                font-family: 'Raleway', sans-serif;
-                font-size: 1.5vw;
-                line-height: 30px;
-                @media screen and (max-width: $phone) {
-                    font-size: 5vw;
-                }
+                @extend %text-content;
             }
         }
     }
     @media screen and (max-width: $phone) {
         height: 60vh;
+        // border: 1px dashed greenyellow;
     }
 }
 
+// .third-section {
+//     @extend %flex-center;
+//     .skills {
+//         @extend %flex-center;
+//         width: 80%;
+//         height: 80%;
+//         @media screen and (max-width: $phone) {
+//             height: 90%;
+//         }
+//         div {
+//             width: 33%;
+//             height: 100%;
+//         }
+//         .skill-part-1 {
+//             display: flex;
+//             justify-content: space-around;
+//             flex-direction: column;
+//             p {
+//                 color: $text;
+//                 width: 100%;
+//                 text-align: right;
+//                 font-size: 2vw;
+//                 font-family: monospace;
+//                 @media screen and (max-width: $phone) {
+//                     font-size: 5vw;
+//                 }
+//             }
+//         }
+//         .skill-part-2 {
+//             @extend %flex-center;
+//             p {
+//                 color: $accent;
+//                 max-height: 100%;
+//                 font-size: 25vw;
+//                 font-family: 'Titillium Web', sans-serif;
+//                 @media screen and (max-width: $phone) {
+//                     font-size: 45vw;
+//                 }
+//             }
+//         }
+//         .skill-part-3 {
+//             @extend %flex-center;
+//             justify-content: flex-start;
+//             h1 {
+//                 color: $text;
+//                 font-size: 5vw;
+//                 font-family: 'Raleway', sans-serif;
+//                 @media screen and (max-width: $phone) {
+//                     font-size: 10vw;
+//                 }
+//             }
+//         }
+//     }
+//     @media screen and (max-width: $phone) {
+//         height: 60vh;
+//     }
+// }
 .third-section {
     @extend %flex-center;
     .skills {
@@ -122,54 +177,52 @@ section {
         width: 80%;
         height: 80%;
         @media screen and (max-width: $phone) {
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            width: 90%;
             height: 90%;
         }
         div {
-            width: 33%;
             height: 100%;
+            @media screen and (max-width: $phone) {
+                height: 90%;
+            }
         }
-        .skill-part-1 {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
+        .left {
+            @extend %flex-center;
+            width: 60%;
             p {
-                color: $text;
+                @extend %text-content;
+                padding-left: 5%;
+                @media screen and (max-width: $phone) {
+                    padding-left: 0%;
+                }
+            }
+            @media screen and (max-width: $phone) {
                 width: 100%;
-                text-align: right;
-                font-size: 2vw;
-                font-family: monospace;
-                @media screen and (max-width: $phone) {
-                    font-size: 5vw;
-                }
             }
         }
-        .skill-part-2 {
+        .right {
             @extend %flex-center;
-            p {
-                color: $accent;
-                max-height: 100%;
-                font-size: 25vw;
-                font-family: 'Titillium Web', sans-serif;
-                @media screen and (max-width: $phone) {
-                    font-size: 45vw;
-                }
+            width: 40%;
+            @media screen and (max-width: $phone) {
+                width: 100%;
+                height: 7%;
             }
-        }
-        .skill-part-3 {
-            @extend %flex-center;
-            justify-content: flex-start;
             h1 {
-                color: $text;
                 font-size: 5vw;
-                font-family: 'Raleway', sans-serif;
+                color: $accent;
+                font-family: "Raleway", sans-serif;
+                text-align: right;
+                padding-right: 10%;
                 @media screen and (max-width: $phone) {
-                    font-size: 10vw;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 8vw;
+                    text-align: left;
                 }
             }
         }
-    }
-    @media screen and (max-width: $phone) {
-        height: 60vh;
     }
 }
 
@@ -216,11 +269,11 @@ section {
             justify-content: space-around;
             flex-direction: column;
             a {
-                width: 50%;
+                width: 60%;
                 height: 10%;
                 @media screen and (max-width: $phone) {
-                    width: 70%;
-                    height: 7%;
+                    width: 100%;
+                    height: 9%;
                 }
                 img {
                     width: 100%;

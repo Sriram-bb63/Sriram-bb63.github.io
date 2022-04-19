@@ -1,15 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
-.fourth-section .contact .contact-part-2, .fourth-section .contact .contact-part-1, .fourth-section .contact, .fourth-section, .third-section .skills .skill-part-3, .third-section .skills .skill-part-2, .third-section .skills, .third-section, .second-section .out, .second-section, .first-section {
+.fourth-section .contact .contact-part-2, .fourth-section .contact .contact-part-1, .fourth-section .contact, .fourth-section, .third-section .skills .right, .third-section .skills .left, .third-section .skills, .third-section, .second-section .out, .second-section, .first-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.third-section .skills .left p, .second-section .out .in p {
+  color: #fff0e1;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5vw;
+  line-height: 30px;
+}
 @media screen and (max-width: 768px) {
-  .scroll-icon {
-    display: none;
+  .third-section .skills .left p, .second-section .out .in p {
+    font-size: 5vw;
   }
 }
 
@@ -46,6 +52,11 @@ section {
 .scroll-icon:hover {
   transform: scale(1.2);
 }
+@media screen and (max-width: 768px) {
+  .scroll-icon {
+    display: none;
+  }
+}
 
 .first-section {
   justify-content: flex-end;
@@ -71,6 +82,7 @@ section {
 
 .second-section .out {
   width: 80%;
+  height: 80%;
 }
 @media screen and (max-width: 768px) {
   .second-section .out {
@@ -85,17 +97,6 @@ section {
     width: 100%;
   }
 }
-.second-section .out .in p {
-  color: #fff0e1;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5vw;
-  line-height: 30px;
-}
-@media screen and (max-width: 768px) {
-  .second-section .out .in p {
-    font-size: 5vw;
-  }
-}
 @media screen and (max-width: 768px) {
   .second-section {
     height: 60vh;
@@ -108,57 +109,58 @@ section {
 }
 @media screen and (max-width: 768px) {
   .third-section .skills {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    width: 90%;
     height: 90%;
   }
 }
 .third-section .skills div {
-  width: 33%;
   height: 100%;
 }
-.third-section .skills .skill-part-1 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-.third-section .skills .skill-part-1 p {
-  color: #fff0e1;
-  width: 100%;
-  text-align: right;
-  font-size: 2vw;
-  font-family: monospace;
-}
 @media screen and (max-width: 768px) {
-  .third-section .skills .skill-part-1 p {
-    font-size: 5vw;
+  .third-section .skills div {
+    height: 90%;
   }
 }
-.third-section .skills .skill-part-2 p {
-  color: #ec6e00;
-  max-height: 100%;
-  font-size: 25vw;
-  font-family: "Titillium Web", sans-serif;
+.third-section .skills .left {
+  width: 60%;
+}
+.third-section .skills .left p {
+  padding-left: 5%;
 }
 @media screen and (max-width: 768px) {
-  .third-section .skills .skill-part-2 p {
-    font-size: 45vw;
+  .third-section .skills .left p {
+    padding-left: 0%;
   }
 }
-.third-section .skills .skill-part-3 {
-  justify-content: flex-start;
+@media screen and (max-width: 768px) {
+  .third-section .skills .left {
+    width: 100%;
+  }
 }
-.third-section .skills .skill-part-3 h1 {
-  color: #fff0e1;
+.third-section .skills .right {
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .third-section .skills .right {
+    width: 100%;
+    height: 7%;
+  }
+}
+.third-section .skills .right h1 {
   font-size: 5vw;
+  color: #ec6e00;
   font-family: "Raleway", sans-serif;
+  text-align: right;
+  padding-right: 10%;
 }
 @media screen and (max-width: 768px) {
-  .third-section .skills .skill-part-3 h1 {
-    font-size: 10vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .third-section {
-    height: 60vh;
+  .third-section .skills .right h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 8vw;
+    text-align: left;
   }
 }
 
@@ -206,13 +208,13 @@ section {
   flex-direction: column;
 }
 .fourth-section .contact .contact-part-3 a {
-  width: 50%;
+  width: 60%;
   height: 10%;
 }
 @media screen and (max-width: 768px) {
   .fourth-section .contact .contact-part-3 a {
-    width: 70%;
-    height: 7%;
+    width: 100%;
+    height: 9%;
   }
 }
 .fourth-section .contact .contact-part-3 a img {
