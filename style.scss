@@ -47,8 +47,8 @@ body {
 }
 
 section {
-    height: 100vh;
-    width: 100vw
+    width: 100vw;
+    min-height: 100vh;
 }
 
 .scroll-icon {
@@ -91,11 +91,10 @@ section {
 .second-section {
     @extend %flex-center;
     @media screen and (max-width: $phone) {
-        height: 60vh;
-        // border: 1px dashed greenyellow;
+        min-height: auto;
+        margin: 25px 0px;
     }
     .out {
-        // border: 1px solid red;
         @extend %flex-center;
         width: 80%;
         height: 80%;
@@ -114,65 +113,12 @@ section {
     }
 }
 
-// .third-section {
-//     @extend %flex-center;
-//     .skills {
-//         @extend %flex-center;
-//         width: 80%;
-//         height: 80%;
-//         @media screen and (max-width: $phone) {
-//             height: 90%;
-//         }
-//         div {
-//             width: 33%;
-//             height: 100%;
-//         }
-//         .skill-part-1 {
-//             display: flex;
-//             justify-content: space-around;
-//             flex-direction: column;
-//             p {
-//                 color: $text;
-//                 width: 100%;
-//                 text-align: right;
-//                 font-size: 2vw;
-//                 font-family: monospace;
-//                 @media screen and (max-width: $phone) {
-//                     font-size: 5vw;
-//                 }
-//             }
-//         }
-//         .skill-part-2 {
-//             @extend %flex-center;
-//             p {
-//                 color: $accent;
-//                 max-height: 100%;
-//                 font-size: 25vw;
-//                 font-family: 'Titillium Web', sans-serif;
-//                 @media screen and (max-width: $phone) {
-//                     font-size: 45vw;
-//                 }
-//             }
-//         }
-//         .skill-part-3 {
-//             @extend %flex-center;
-//             justify-content: flex-start;
-//             h1 {
-//                 color: $text;
-//                 font-size: 5vw;
-//                 @extend %font-family;
-//                 @media screen and (max-width: $phone) {
-//                     font-size: 10vw;
-//                 }
-//             }
-//         }
-//     }
-//     @media screen and (max-width: $phone) {
-//         height: 60vh;
-//     }
-// }
 .third-section {
     @extend %flex-center;
+    @media screen and (max-width: $phone) {
+        min-height: auto;
+        margin: 25px 0px;
+    }
     .skills {
         @extend %flex-center;
         width: 80%;
@@ -232,13 +178,14 @@ section {
 
 .fourth-section {
     @extend %flex-center;
+    @media screen and (max-width: $phone) {
+        min-height: auto;
+        margin: 25px 0px;
+    }
     .contact {
         @extend %flex-center;
         width: 80%;
         height: 80%;
-        @media screen and (max-width: $phone) {
-            height: 90%;
-        }
         div {
             width: 33%;
             height: 100%;
@@ -252,45 +199,44 @@ section {
                 text-align: right;
                 font-family: 'Montserrat', sans-serif;
                 @media screen and (max-width: $phone) {
-                    font-size: 8vw;
+                    font-size: 7vw;
                 }
             }
         }
         .contact-part-2 {
             @extend %flex-center;
             p {
+                @extend %flex-center;
                 color: $accent;
-                max-height: 100%;
                 font-size: 25vw;
                 font-family: 'Titillium Web', sans-serif;
-                @media screen and (max-width: $phone) {
-                    font-size: 45vw;
-                }
             }
         }
         .contact-part-3 {
             display: flex;
             justify-content: space-around;
             flex-direction: column;
+            @media screen and (max-width: $phone) {
+                height: 100%;
+            }
             a {
+                @extend %flex-center;
                 width: 60%;
                 height: 10%;
-                @media screen and (max-width: $phone) {
-                    width: 100%;
-                    height: 9%;
+                @media screen and (max-width:$phone) {
+                    width: auto;
                 }
                 img {
-                    width: 100%;
-                    height: 100%;
                     transition: transform .2s;
+                    width: 100%;
                     &:hover {
                         transform: scale(1.2);
+                    }
+                    @media screen and (max-width:$phone) {
+                        width: 100%;
                     }
                 }
             }
         }
-    }
-    @media screen and (max-width: $phone) {
-        height: 40vh;
     }
 }
