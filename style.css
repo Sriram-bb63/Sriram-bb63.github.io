@@ -104,6 +104,11 @@ section {
     width: 100%;
   }
 }
+.second-section .out .in p a {
+  color: #ec6e00;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
   .third-section {
     min-height: auto;
