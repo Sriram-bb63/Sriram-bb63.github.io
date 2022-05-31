@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 // colors
-$bg: #001b5a;
-$text: #fff0e1;
-$accent: #ec6e00;
+$bg: #28282b;
+$text: #f5f5f5;
+$accent: #3037d6;
 
 // sizes
 $phone: 768px;
@@ -21,10 +21,11 @@ $phone: 768px;
 %text-content {
     color: $text;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1.5vw;
+    font-size: 18px;
     line-height: 30px;
     @media screen and (max-width: $phone) {
-        font-size: 5vw;
+        font-size: 14px;
+        line-height: 25px;
     }
 }
 
@@ -40,7 +41,7 @@ html {
 body {
     background-color: $bg;
     overflow: hidden;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     @media screen and (max-width: $phone) {
         overflow: visible;
     }
@@ -52,10 +53,10 @@ section {
 }
 
 .scroll-icon {
-    width: 5vw;
+    width: 75px;
     padding-bottom: 5vh;
     transition: transform .2s;
-    filter: invert(64%) sepia(97%) saturate(4700%) hue-rotate(8deg) brightness(92%) contrast(104%);
+    // filter: invert(64%) sepia(97%) saturate(4700%) hue-rotate(8deg) brightness(92%) contrast(104%);
     &:hover {
         transform: scale(1.2);
     }
@@ -66,25 +67,49 @@ section {
 
 .first-section {
     @extend %flex-center;
-    justify-content: flex-end;
-    flex-direction: column;
-    h1 {
-        color: $accent;
-        padding-bottom: 35vh;
-        font-size: 5vw;
-        font-family: 'Montserrat', sans-serif;
-        // text-decoration: underline;
-        // text-decoration-thickness: 1px;
-        // text-underline-offset: 5px;
-        span {
-            color: $text;
-            font-weight: 100;
+    .container {
+        @extend %flex-center;
+        flex-direction: column;
+        h1 {
+            color: $accent;
+            font-size: 80px;
+            font-family: 'Montserrat', sans-serif;
+            span {
+                color: $text;
+                font-weight: 100;
+            }
+            @media screen and (max-width: $phone) {
+                font-size: 50px;
+                padding-left: 5%;
+                padding-bottom: 10%;
+            }
         }
-        @media screen and (max-width: $phone) {
-            font-size: 15vw;
-            padding-left: 5%;
-            padding-bottom: 15%;
+        .socials {
+            @extend %flex-center;
+            width: 40%;
+            margin-top: 10px;
+            justify-content: space-around;
+            img {
+                width: 25px;
+                transition: 0.2s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            #linkedin {
+                width: 20px;
+            }
+            @media screen and (max-width: $phone) {
+                width: 70%;
+            }
         }
+    }
+    #down-arrow {
+        position: absolute;
+        top: 90%
+    }
+    @media screen and (max-width: $phone) {
+        min-height: 30vh;
     }
 }
 
@@ -164,7 +189,7 @@ section {
                 height: 7%;
             }
             h1 {
-                font-size: 5vw;
+                font-size: 60px;
                 font-family: 'Montserrat', sans-serif;
                 color: $accent;
                 text-align: right;
@@ -172,7 +197,7 @@ section {
                 @media screen and (max-width: $phone) {
                     width: 100%;
                     height: 100%;
-                    font-size: 8vw;
+                    font-size: 25px;
                     text-align: left;
                 }
             }
@@ -182,65 +207,61 @@ section {
 
 .fourth-section {
     @extend %flex-center;
+    min-height: 90vh;
     @media screen and (max-width: $phone) {
-        min-height: auto;
-        margin: 25px 0px;
+        min-height: 30vh;
     }
-    .contact {
+    .container {
         @extend %flex-center;
         width: 80%;
-        height: 80%;
-        div {
-            width: 33%;
-            height: 100%;
+        @media screen and (max-width: $phone) {
+            width: 90%;
         }
-        .contact-part-1 {
-            @extend %flex-center;
-            justify-content: flex-start;
-            h1 {
-                color: $text;
-                font-size: 5vw;
-                text-align: right;
-                font-family: 'Montserrat', sans-serif;
-                @media screen and (max-width: $phone) {
-                    font-size: 7vw;
-                }
-            }
-        }
-        .contact-part-2 {
-            @extend %flex-center;
-            p {
-                @extend %flex-center;
-                color: $accent;
-                font-size: 25vw;
-                font-family: 'Titillium Web', sans-serif;
-            }
-        }
-        .contact-part-3 {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
+        img {
+            width: 50%;
             @media screen and (max-width: $phone) {
-                height: 100%;
+                width: 100%;
             }
-            a {
-                @extend %flex-center;
-                width: 60%;
-                height: 10%;
-                @media screen and (max-width:$phone) {
-                    width: auto;
-                }
-                img {
-                    transition: transform .2s;
-                    width: 100%;
-                    &:hover {
-                        transform: scale(1.2);
-                    }
-                    @media screen and (max-width:$phone) {
-                        width: 100%;
-                    }
-                }
-            }
+        }
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: $accent;
+    display: flex;
+    @media screen and (max-width: $phone) {
+        flex-direction: column;
+        justify-content: center;
+    }
+    div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @media screen and (max-width: $phone) {
+            width: 100%;
+        }
+        p {
+            color: $text;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+    }
+    .left p {
+        margin-left: 55px;
+        @media screen and (max-width: $phone) {
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+    }
+    .right p {
+        text-align: right;
+        margin-right: 55px;
+        @media screen and (max-width: $phone) {
+            margin: 0;
+            text-align: center;
         }
     }
 }

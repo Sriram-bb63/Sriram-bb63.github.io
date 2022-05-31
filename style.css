@@ -2,21 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-.fourth-section .contact .contact-part-3 a, .fourth-section .contact .contact-part-2 p, .fourth-section .contact .contact-part-2, .fourth-section .contact .contact-part-1, .fourth-section .contact, .fourth-section, .third-section .skills .right, .third-section .skills .left, .third-section .skills, .third-section, .second-section .out, .second-section, .first-section {
+.fourth-section .container, .fourth-section, .third-section .skills .right, .third-section .skills .left, .third-section .skills, .third-section, .second-section .out, .second-section, .first-section .container .socials, .first-section .container, .first-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .third-section .skills .left p, .second-section .out .in p {
-  color: #fff0e1;
+  color: #f5f5f5;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1.5vw;
+  font-size: 18px;
   line-height: 30px;
 }
 @media screen and (max-width: 768px) {
   .third-section .skills .left p, .second-section .out .in p {
-    font-size: 5vw;
+    font-size: 14px;
+    line-height: 25px;
   }
 }
 
@@ -30,8 +31,9 @@ html {
 }
 
 body {
-  background-color: #001b5a;
+  background-color: #28282b;
   overflow: hidden;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 768px) {
   body {
@@ -45,10 +47,9 @@ section {
 }
 
 .scroll-icon {
-  width: 5vw;
+  width: 75px;
   padding-bottom: 5vh;
   transition: transform 0.2s;
-  filter: invert(64%) sepia(97%) saturate(4700%) hue-rotate(8deg) brightness(92%) contrast(104%);
 }
 .scroll-icon:hover {
   transform: scale(1.2);
@@ -59,25 +60,52 @@ section {
   }
 }
 
-.first-section {
-  justify-content: flex-end;
+.first-section .container {
   flex-direction: column;
 }
-.first-section h1 {
-  color: #ec6e00;
-  padding-bottom: 35vh;
-  font-size: 5vw;
+.first-section .container h1 {
+  color: #3037d6;
+  font-size: 80px;
   font-family: "Montserrat", sans-serif;
 }
-.first-section h1 span {
-  color: #fff0e1;
+.first-section .container h1 span {
+  color: #f5f5f5;
   font-weight: 100;
 }
 @media screen and (max-width: 768px) {
-  .first-section h1 {
-    font-size: 15vw;
+  .first-section .container h1 {
+    font-size: 50px;
     padding-left: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
+  }
+}
+.first-section .container .socials {
+  width: 40%;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+.first-section .container .socials img {
+  width: 25px;
+  transition: 0.2s;
+}
+.first-section .container .socials img:hover {
+  transform: scale(1.2);
+}
+.first-section .container .socials #linkedin {
+  width: 20px;
+}
+@media screen and (max-width: 768px) {
+  .first-section .container .socials {
+    width: 70%;
+  }
+}
+.first-section #down-arrow {
+  position: absolute;
+  top: 90%;
+}
+@media screen and (max-width: 768px) {
+  .first-section {
+    min-height: 30vh;
   }
 }
 
@@ -105,7 +133,7 @@ section {
   }
 }
 .second-section .out .in p a {
-  color: #ec6e00;
+  color: #3037d6;
   font-weight: bold;
 }
 
@@ -164,9 +192,9 @@ section {
   }
 }
 .third-section .skills .right h1 {
-  font-size: 5vw;
+  font-size: 60px;
   font-family: "Montserrat", sans-serif;
-  color: #ec6e00;
+  color: #3037d6;
   text-align: right;
   padding-right: 10%;
 }
@@ -174,73 +202,81 @@ section {
   .third-section .skills .right h1 {
     width: 100%;
     height: 100%;
-    font-size: 8vw;
+    font-size: 25px;
     text-align: left;
   }
 }
 
+.fourth-section {
+  min-height: 90vh;
+}
 @media screen and (max-width: 768px) {
   .fourth-section {
-    min-height: auto;
-    margin: 25px 0px;
+    min-height: 30vh;
   }
 }
-.fourth-section .contact {
+.fourth-section .container {
   width: 80%;
-  height: 80%;
-}
-.fourth-section .contact div {
-  width: 33%;
-  height: 100%;
-}
-.fourth-section .contact .contact-part-1 {
-  justify-content: flex-start;
-}
-.fourth-section .contact .contact-part-1 h1 {
-  color: #fff0e1;
-  font-size: 5vw;
-  text-align: right;
-  font-family: "Montserrat", sans-serif;
 }
 @media screen and (max-width: 768px) {
-  .fourth-section .contact .contact-part-1 h1 {
-    font-size: 7vw;
+  .fourth-section .container {
+    width: 90%;
   }
 }
-.fourth-section .contact .contact-part-2 p {
-  color: #ec6e00;
-  font-size: 25vw;
-  font-family: "Titillium Web", sans-serif;
+.fourth-section .container img {
+  width: 50%;
 }
-.fourth-section .contact .contact-part-3 {
+@media screen and (max-width: 768px) {
+  .fourth-section .container img {
+    width: 100%;
+  }
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #3037d6;
   display: flex;
-  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+footer div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 @media screen and (max-width: 768px) {
-  .fourth-section .contact .contact-part-3 {
-    height: 100%;
-  }
-}
-.fourth-section .contact .contact-part-3 a {
-  width: 60%;
-  height: 10%;
-}
-@media screen and (max-width: 768px) {
-  .fourth-section .contact .contact-part-3 a {
-    width: auto;
-  }
-}
-.fourth-section .contact .contact-part-3 a img {
-  transition: transform 0.2s;
-  width: 100%;
-}
-.fourth-section .contact .contact-part-3 a img:hover {
-  transform: scale(1.2);
-}
-@media screen and (max-width: 768px) {
-  .fourth-section .contact .contact-part-3 a img {
+  footer div {
     width: 100%;
+  }
+}
+footer div p {
+  color: #f5f5f5;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+footer .left p {
+  margin-left: 55px;
+}
+@media screen and (max-width: 768px) {
+  footer .left p {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+}
+footer .right p {
+  text-align: right;
+  margin-right: 55px;
+}
+@media screen and (max-width: 768px) {
+  footer .right p {
+    margin: 0;
+    text-align: center;
   }
 }
 
