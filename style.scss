@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 // colors
-$bg: #28282b;
+$bg: #1e1e21;
 $text: #f5f5f5;
 $accent: #3037d6;
 
@@ -86,6 +86,7 @@ section {
         }
         .socials {
             @extend %flex-center;
+            padding: 10px;
             width: 40%;
             margin-top: 10px;
             justify-content: space-around;
@@ -93,6 +94,7 @@ section {
                 width: 25px;
                 transition: 0.2s;
                 &:hover {
+                    filter: drop-shadow(0px 0px 10px 5px $accent);
                     transform: scale(1.2);
                 }
             }
@@ -175,6 +177,7 @@ section {
                 }
                 .mono {
                     font-family: monospace;
+                    color: #33c7de;
                 }
             }
             @media screen and (max-width: $phone) {
@@ -218,9 +221,12 @@ section {
             width: 90%;
         }
         img {
-            width: 50%;
+            width: 70%;
+            box-shadow: 0px 0px 20px 10px $accent;
+            border-radius: 10px;
             @media screen and (max-width: $phone) {
-                width: 100%;
+                width: 90%;
+                box-shadow: 0px 0px 10px 5px $accent;
             }
         }
     }
@@ -246,7 +252,7 @@ footer {
         p {
             color: $text;
             font-size: 12px;
-            font-family: sans-serif;
+            font-family: "Noto sans", sans-serif;
         }
     }
     .left p {
