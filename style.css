@@ -5,7 +5,7 @@
 .fourth-section .container, .fourth-section, .third-section .skills .right, .third-section .skills .left, .third-section .skills, .third-section, .second-section .out, .second-section, .first-section .container .socials, .first-section .container, .first-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .third-section .skills .left p, .second-section .out .in p {
@@ -35,6 +35,32 @@ body {
   overflow: hidden;
   overflow-x: hidden;
 }
+
+.icons {
+  color: white;
+  padding: 0.5rem 1.8rem;
+  /* transition: 2s; */
+}
+
+.i-icons {
+  transition: 0.3s;
+}
+
+/* .icons :hover {
+  color: #3037d6;
+} */
+
+.i-icons:hover {
+  color: #3037d6;
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+
+}
+
+/* .i-icons {
+  width: 25%;
+} */
+
 @media screen and (max-width: 768px) {
   body {
     overflow: visible;
@@ -58,6 +84,12 @@ section {
   .scroll-icon {
     display: none;
   }
+
+  .icons {
+    padding: 0%;
+    margin-bottom: 15px;
+  }
+
 }
 
 .first-section .container {
